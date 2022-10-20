@@ -1,18 +1,9 @@
+using System.Collections;
+using System.Runtime.InteropServices;
+using System.Text;
 
 namespace MK.MobileDevice.Lite
 {
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Runtime.CompilerServices;
-    using System.Runtime.InteropServices;
-    using System.Text;
-    using System.Linq;
-    using MK.Plist;
-    using System.Xml;
-    using System.Xml.Linq;
-    
-	
     public class iOSDeviceMK
     {
         private bool connected;

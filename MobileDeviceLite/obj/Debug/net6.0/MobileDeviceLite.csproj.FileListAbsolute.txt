@@ -1,0 +1,12 @@
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\bin\Debug\net6.0\MobileDeviceLite.deps.json
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\bin\Debug\net6.0\MobileDeviceLite.dll
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\bin\Debug\net6.0\MobileDeviceLite.pdb
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\obj\Debug\net6.0\MobileDeviceLite.csproj.AssemblyReference.cache
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\obj\Debug\net6.0\MobileDeviceLite.GeneratedMSBuildEditorConfig.editorconfig
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\obj\Debug\net6.0\MobileDeviceLite.AssemblyInfoInputs.cache
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\obj\Debug\net6.0\MobileDeviceLite.AssemblyInfo.cs
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\obj\Debug\net6.0\MobileDeviceLite.csproj.CoreCompileInputs.cache
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\obj\Debug\net6.0\MobileDeviceLite.dll
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\obj\Debug\net6.0\refint\MobileDeviceLite.dll
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\obj\Debug\net6.0\MobileDeviceLite.pdb
+D:\repositories\github\VisualLife\MK.MobileDevice.Lite.Core\MobileDeviceLite\obj\Debug\net6.0\ref\MobileDeviceLite.dll

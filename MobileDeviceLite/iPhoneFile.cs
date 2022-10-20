@@ -1,8 +1,5 @@
 namespace MK.MobileDevice.Lite
 {
-    using System;
-    using System.IO;
-
     public class iPhoneFile : Stream
     {
         private long handle;

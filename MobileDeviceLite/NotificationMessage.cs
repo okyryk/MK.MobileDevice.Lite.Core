@@ -1,7 +1,5 @@
 namespace MK.MobileDevice.Lite
 {
-    using System;
-
     public enum NotificationMessage
     {
         Connected = 1,

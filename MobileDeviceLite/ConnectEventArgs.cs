@@ -1,9 +1,5 @@
-
-
 namespace MK.MobileDevice.Lite
 {
-    using System;
-
     public class ITMDConnectEventArgs : EventArgs
     {
         private unsafe void* device;

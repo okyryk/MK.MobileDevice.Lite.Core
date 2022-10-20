@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MobileDeviceLiteDemo/1.0.0": {
+        "dependencies": {
+          "MobileDeviceLite": "1.0.0"
+        },
+        "runtime": {
+          "MobileDeviceLiteDemo.dll": {}
+        }
+      },
+      "MobileDeviceLite/1.0.0": {
+        "runtime": {
+          "MobileDeviceLite.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MobileDeviceLiteDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MobileDeviceLite/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,8 +1,8 @@
+using System;
+using System.Runtime.InteropServices;
+
 namespace MK.MobileDevice.Lite
 {
-    using System;
-    using System.Runtime.InteropServices;
-
     [StructLayout(LayoutKind.Sequential, Pack=1)]
     internal struct AMDeviceNotificationCallbackInfo
     {

@@ -1,17 +1,14 @@
+using Microsoft.Win32;
+using System.Runtime.InteropServices;
+using System.Text;
+
 namespace MK.MobileDevice.Lite
 {
-    using Microsoft.Win32;
-    using System;
-    using System.IO;
-    using System.Runtime.InteropServices;
-    using System.Text;
-    
-	
     internal class MobileDevice
     {
-        private static readonly DirectoryInfo ApplicationSupportDirectory = new DirectoryInfo(Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Apple Inc.\Apple Application Support", "InstallDir", Environment.CurrentDirectory).ToString());
-        private const string iTMDDLLPath = "iTunesMobileDevice.dll";
-        private static readonly FileInfo iTunesMobileDeviceFile = new FileInfo(Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Apple Inc.\Apple Mobile Device Support\Shared", "iTunesMobileDeviceDLL", iTMDDLLPath).ToString());
+        private const string iTMDDLLPath = "MobileDevice.dll";
+        private static readonly DirectoryInfo ApplicationSupportDirectory = GetApplicationSupportDirectoryInfo();
+        private static readonly FileInfo iTunesMobileDeviceFile = GetITunesMobileDeviceFile();
 
         static MobileDevice()
         {
@@ -24,8 +21,20 @@ namespace MK.MobileDevice.Lite
             Environment.SetEnvironmentVariable("Path", string.Join(";", new string[] { Environment.GetEnvironmentVariable("Path"), directoryName, ApplicationSupportDirectory.FullName }));
         }
 
-        
-        
+        private static DirectoryInfo GetApplicationSupportDirectoryInfo()
+        {
+            var key = Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Apple Inc.\Apple Mobile Device Support", "InstallDir", Environment.CurrentDirectory);
+            
+            return new DirectoryInfo(key.ToString());
+        }
+
+        private static FileInfo GetITunesMobileDeviceFile()
+        {
+            return new FileInfo(Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Apple Inc.\Apple Mobile Device Support\Shared", "MobileDeviceDLL", iTMDDLLPath).ToString());
+        }
+
+
+
         [DllImport("CoreFoundation.dll", CallingConvention=CallingConvention.Cdecl)]
         public static extern unsafe void* __CFStringMakeConstantString(byte[] s);
         [DllImport(iTMDDLLPath, CallingConvention=CallingConvention.Cdecl)]

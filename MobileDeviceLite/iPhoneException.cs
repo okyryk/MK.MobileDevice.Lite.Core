@@ -1,14 +1,9 @@
-﻿/*
-
- */
-using System;
-
-namespace MK.MobileDevice.Lite
+﻿namespace MK.MobileDevice.Lite
 {
-	/// <summary>
-	/// iPhoneException.
-	/// </summary>
-	class iPhoneException : Exception
+    /// <summary>
+    /// iPhoneException.
+    /// </summary>
+    class iPhoneException : Exception
     {
         public iPhoneException()
             : base() { }
